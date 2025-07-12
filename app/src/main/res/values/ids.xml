@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="note_title" type="id" />
+    <item name="note_content" type="id" />
+    <item name="note_date" type="id" />
+</resources>

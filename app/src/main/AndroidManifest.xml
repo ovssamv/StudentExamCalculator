@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    package="com.example.calculclau">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_background"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher_background"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.main.TeacherActivity"/>
+        <activity
+            android:name="com.example.GradesmManagment.StudentsListActivity"
+            android:label="Students List" />
+        <activity
+            android:name="com.example.grades.ViewGradesActivity"
+            android:label="My Grades"
+            android:parentActivityName="com.example.main.MainActivity" />
+        <activity
+            android:name="com.example.GradesmManagment.GradeCalculatorActivity"
+            android:label="Grade Calculator"
+            android:parentActivityName="com.example.main.MainActivity" />
+        <activity
+            android:name="com.example.main.EditProfileActivity"
+            android:label="EditProfileActivity" />
+
+
+        <activity
+            android:name="com.example.grades.StudentGradesActivity"
+            android:label="Student Grades"
+            android:parentActivityName="com.example.GradesmManagment.StudentsListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.GradesmManagment.StudentsListActivity" />
+        </activity>
+        <!-- Splash Activity -->
+        <activity
+            android:name="com.example.authentication.LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.example.authentication.SignupActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Make sure SplashActivity is set as the LAUNCHER activity -->
+        <activity
+            android:name="com.example.main.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity -->
+        <activity
+            android:name="com.example.main.MainActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name="com.example.main.ProfileActivity"
+            android:label="My Profile"
+            android:parentActivityName="com.example.main.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.main.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.example.anouncement.AnnouncementDetailActivity"
+            android:exported="false"
+            android:parentActivityName="com.example.anouncement.AnnouncementsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.anouncement.AnnouncementsActivity" />
+        </activity>
+
+        <activity
+            android:name="com.example.anouncement.AddEditAnnouncementActivity"
+            android:exported="false"
+            android:parentActivityName="com.example.anouncement.AnnouncementsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.anouncement.AnnouncementsActivity" />
+        </activity>
+
+        <activity
+            android:name="com.example.anouncement.AnnouncementsActivity"
+            android:exported="false"
+            android:parentActivityName="com.example.main.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.main.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.main.ModuleViewActivity">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Green Colors -->
+    <color name="colorPrimary">#60939b</color>  <!-- Medium Green -->
+    <color name="colorPrimaryDark">#388E3C</color>  <!-- Dark Green -->
+    <color name="colorPrimaryLight">#C8E6C9</color>  <!-- Light Green -->
+
+    <!-- Accent Colors -->
+    <color name="colorAccent">#C8F4D9</color>  <!-- Light Green Accent -->
+    <color name="colorAccentDark">#C8F4D9</color>  <!-- Darker Green Accent -->
+
+    <!-- Silver/Light Gray Colors -->
+    <color name="colorSilver">#C0C0C0</color>  <!-- Classic Silver -->
+    <color name="colorLightGray">#E0E0E0</color>  <!-- Light Gray -->
+    <color name="colorLighterGray">#F5F5F5</color>  <!-- Very Light Gray -->
+    <color name="colorMediumGray">#9E9E9E</color>  <!-- Medium Gray -->
+
+    <!-- Text Colors -->
+    <color name="textColorPrimary">#212121</color>  <!-- Dark Text -->
+    <color name="textColorSecondary">#757575</color>  <!-- Secondary Text -->
+    <color name="textColorOnPrimary">#FFFFFF</color>  <!-- White Text on Green -->
+    <color name="textColorOnSilver">#212121</color>  <!-- Dark Text on Silver -->
+
+    <!-- Background Colors -->
+    <color name="backgroundLight">#FFFFFF</color>  <!-- White Background -->
+    <color name="backgroundSilver">#F5F5F5</color>  <!-- Light Silver Background -->
+
+    <!-- Button Colors -->
+    <color name="buttonColorPrimary">#4CAF50</color>
+    <color name="buttonColorPrimaryPressed">#388E3C</color>
+    <color name="buttonColorSecondary">#E0E0E0</color>
+    <color name="buttonColorSecondaryPressed">#BDBDBD</color>
+
+    <!-- Status/Alert Colors -->
+    <color name="colorSuccess">#4CAF50</color>
+    <color name="colorWarning">#FFC107</color>
+    <color name="colorError">#F44336</color>
+
+    <!-- Divider Colors -->
+    <color name="dividerColor">#E0E0E0</color>
+
+    <!-- CardView Colors -->
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="cardElevationShadow">#33000000</color>
+</resources>

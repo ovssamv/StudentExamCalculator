@@ -1,0 +1,22 @@
+[versions]
+agp = "8.2.0"
+volley = "1.2.1"
+gson = "2.10.1"
+navigationFragment = "2.8.8"
+navigationUi = "2.8.8"
+
+[libraries]
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version = "1.6.1" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version = "2.1.4" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version = "1.3.2" }
+material = { group = "com.google.android.material", name = "material", version = "1.11.0" }
+volley = { group = "com.android.volley", name = "volley", version.ref = "volley" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+junit = { group = "junit", name = "junit", version = "4.13.2" }
+androidx-test-ext = { group = "androidx.test.ext", name = "junit", version = "1.1.5" }
+androidx-test-espresso = { group = "androidx.test.espresso", name = "espresso-core", version = "3.5.1" }
+androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+androidx-navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }

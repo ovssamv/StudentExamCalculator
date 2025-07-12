@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select grade component:"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/report_type_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_td"
+                android:tint="@color/colorPrimary"
+                android:layout_marginEnd="8dp"/>
+
+            <RadioButton
+                android:id="@+id/report_td"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TD"
+                android:buttonTint="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_tp"
+                android:tint="@color/colorPrimary"
+                android:layout_marginEnd="8dp"/>
+
+            <RadioButton
+                android:id="@+id/report_tp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TP"
+                android:buttonTint="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_exam"
+                android:tint="@color/colorPrimary"
+                android:layout_marginEnd="8dp"/>
+
+            <RadioButton
+                android:id="@+id/report_exam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXAM"
+                android:buttonTint="@color/colorPrimary"/>
+        </LinearLayout>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Describe the issue:"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_description"
+            android:tint="@color/colorPrimary"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/report_issue_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="3"
+            android:gravity="top|start"
+            android:hint="E.g., Grade not recorded, incorrect value, etc."
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+</LinearLayout>
